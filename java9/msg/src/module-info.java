@@ -1,0 +1,3 @@
+module msg {
+    exports notify;
+}
