@@ -62,6 +62,7 @@ public class Main {
 
         checkProcessRunning.addDownload("anhkhongdoiqua");
         checkProcessRunning.addDownload("lamvoanhnhe");
+        checkProcessRunning.addDownload("vonguoita");
 
         System.out.println(checkProcessRunning.getRunning());
 
