@@ -1,0 +1,3 @@
+module FileType {
+    exports common;
+}

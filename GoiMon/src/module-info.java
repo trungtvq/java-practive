@@ -1,3 +1,0 @@
-module GoiMon {
-    exports chin;
-}

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../CheBienMon/CheBienMon.iml" filepath="$PROJECT_DIR$/../CheBienMon/CheBienMon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../GoiMon/GoiMon.iml" filepath="$PROJECT_DIR$/../GoiMon/GoiMon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../DownloadModule/DownloadModule.iml" filepath="$PROJECT_DIR$/../DownloadModule/DownloadModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IDumpDataModule/IDumpDataModule.iml" filepath="$PROJECT_DIR$/../IDumpDataModule/IDumpDataModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../IProcessModule/IProcessModule.iml" filepath="$PROJECT_DIR$/../IProcessModule/IProcessModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/java9.iml" filepath="$PROJECT_DIR$/java9.iml" />
-      <module fileurl="file://$PROJECT_DIR$/msg/msg.iml" filepath="$PROJECT_DIR$/msg/msg.iml" />
     </modules>
   </component>
 </project>

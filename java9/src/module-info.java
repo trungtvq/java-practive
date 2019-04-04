@@ -1,6 +1,6 @@
-import notify.Error;
-
 module java9 {
-    requires msg;
+    requires IDumpDataModule;
+    requires IProcessModule;
     requires jdk.incubator.httpclient;
+
 }
