@@ -57,13 +57,15 @@ public class Main {
     }
     public static void main(String[] args) throws URISyntaxException, IOException, InterruptedException {
 
-        //Module system
+        //we have list download process
         IProcess checkProcessRunning=ListDownload.download;
 
+        //we add some download process
         checkProcessRunning.addDownload("anhkhongdoiqua");
         checkProcessRunning.addDownload("lamvoanhnhe");
         checkProcessRunning.addDownload("vonguoita");
 
+        //we count num of download process
         System.out.println(checkProcessRunning.getRunning());
 
 //        //HTTP2
