@@ -25,6 +25,9 @@ public class Main {
 
         // This method is not part of the public API exposed by MyInterface
         private void init() { System.out.println("Initializing"); }
+        public static void s(){
+            System.out.println("dd");
+        }
     }
 
 
@@ -34,6 +37,7 @@ public class Main {
         public void normalInterfaceMethod() {
 
         }
+
     }
 
     abstract static class MyHandler<T> {
