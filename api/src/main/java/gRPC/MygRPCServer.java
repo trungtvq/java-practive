@@ -20,7 +20,7 @@ public class MygRPCServer {
     public static void main(String[] arg) {
         try {
             Server server = ServerBuilder.forPort(8080)
-                   .addService (new HelloServicesImpl())
+                //   .addService (new HelloServicesImpl())
 //                    .addService((BindableService) new SignUpServiceImp())
 //                    .addService((BindableService) new LoginServiceImp())
                     .build();

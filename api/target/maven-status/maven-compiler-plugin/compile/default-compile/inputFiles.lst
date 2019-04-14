@@ -1,4 +1,10 @@
-/home/cpu11290/IdeaProjects/api/src/main/java/gRPC/MygRPCServer.java
-/home/cpu11290/IdeaProjects/api/target/generated-sources/protobuf/java/gRPC/HelloServices.java
-/home/cpu11290/IdeaProjects/api/target/generated-sources/protobuf/grpc-java/gRPC/HelloServiceGrpc.java
-/home/cpu11290/IdeaProjects/api/src/main/java/gRPC/HelloServicesImpl.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/java/io/grpc/examples/helloworld/HelloReply.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/java/io/grpc/examples/helloworld/HelloReplyOrBuilder.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/java/io/grpc/examples/helloworld/HelloRequest.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/grpc-java/io/grpc/examples/helloworld/GreeterGrpc.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/java/io/grpc/examples/helloworld/HelloWorldProto.java
+/home/trung/IdeaProjects/java-practive/api/target/generated-sources/protobuf/java/io/grpc/examples/helloworld/HelloRequestOrBuilder.java
+/home/trung/IdeaProjects/java-practive/api/src/main/java/gRPC/HelloWorldClient.java
+/home/trung/IdeaProjects/java-practive/api/src/main/java/gRPC/MygRPCServer.java
+/home/trung/IdeaProjects/java-practive/api/src/main/java/gRPC/HelloWorldServer.java
+/home/trung/IdeaProjects/java-practive/api/src/main/java/gRPC/HelloServicesImpl.java

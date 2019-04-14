@@ -2,18 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7e4923c-fdc1-4e5d-b9eb-78157630e957" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/HelloServices.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exDynamicDbController/src/main/java/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exDynamicDbController/src/main/java/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exDynamicDbController/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exDynamicDbController/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java11/.idea/workspace.xml___jb_tmp___" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gRPC/HelloWorldClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/gRPC/HelloWorldServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/helloworld.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/HelloServices.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceBaseDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceFileDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceFutureStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceImplBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceMethodDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$HelloServiceStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc$MethodHandlers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServiceGrpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloRequest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloRequest$BagOfTricksDefaultEntryHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloRequest$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloRequestOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloResponse$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloResponse$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$HelloResponseOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$Sentiment$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices$Sentiment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServices.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServicesImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/HelloServicesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gRPC/HelloServicesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gRPC/MygRPCServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gRPC/MygRPCServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/gRPC/HelloServiceGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/gRPC/HelloServices.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/auth.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/backend.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/billing.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/config_change.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/consumer.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/control.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/distribution.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/documentation.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/endpoint.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/experimental/authorization_config.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/experimental/experimental.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/http.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/httpbody.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/label.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/logging.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/metric.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/monitored_resource.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/monitoring.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/quota.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/source_info.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/system_parameter.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/api/usage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/cloud/audit/audit_log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/logging/type/http_request.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/logging/type/log_severity.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/longrunning/operations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/rpc/code.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/rpc/error_details.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/rpc/status.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/color.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/date.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/dayofweek.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/latlng.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/money.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/postal_address.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/4fb9fae00936237c55475a479df2f56c/google/type/timeofday.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/any.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/api.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/compiler/plugin.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/descriptor.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/duration.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/empty.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/field_mask.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/source_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/struct.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/timestamp.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/type.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/5a2d12bad91cb6575e9321314adf0076/google/protobuf/wrappers.proto" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,16 +118,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api.iml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/HelloServices.proto">
+        <entry file="file://$PROJECT_DIR$/src/main/proto/helloworld.proto">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <caret line="15" column="18" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloWorldServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloWorldClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="393">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,13 +154,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="195">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#306#351#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,6 +189,8 @@
       <find>StreamObserver</find>
       <find>greetStreamB</find>
       <find>greetStream2</find>
+      <find>Greeting</find>
+      <find>Hello</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,6 +213,8 @@
         <option value="$PROJECT_DIR$/src/main/proto/HelloServices.proto" />
         <option value="$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gRPC/HelloWorldServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gRPC/HelloWorldClient.java" />
       </list>
     </option>
   </component>
@@ -168,14 +269,6 @@
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="proto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -189,7 +282,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/gRPC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -215,7 +308,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloWorldClient">
+    <configuration name="HelloWorldClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gRPC.HelloWorldClient" />
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gRPC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorldServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gRPC.HelloWorldServer" />
+      <module name="api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gRPC.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MygRPCServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gRPC.MygRPCServer" />
       <module name="api" />
@@ -231,6 +350,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloWorldClient" />
+        <item itemvalue="Application.HelloWorldServer" />
         <item itemvalue="Application.MygRPCServer" />
       </list>
     </recent_temporary>
@@ -248,28 +369,29 @@
       <workItem from="1555053973474" duration="3296000" />
       <workItem from="1555058251920" duration="17000" />
       <workItem from="1555058290919" duration="6308000" />
+      <workItem from="1555125695765" duration="2879000" />
+      <workItem from="1555128594476" duration="311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9621000" />
+    <option name="totallyTimeSpent" value="12811000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29775882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Learn" order="6" />
+      <window_info id="Learn" order="6" weight="0.32977587" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32925585" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32925585" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32925585" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843652" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,6 +401,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32843652" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,52 +418,11 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/LoginServiceImplBase.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.12.0/grpc-stub-1.12.0.jar!/io/grpc/stub/StreamObserver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding>
-            <element signature="e#71#72#0" expanded="true" />
-            <element signature="e#98#99#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.12.0/grpc-stub-1.12.0.jar!/io/grpc/stub/StreamObservers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/gRPC/ExampleServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#63949#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.12.0/grpc-stub-1.12.0.jar!/io/grpc/stub/StreamObserver.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloRequest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloResponse.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/grpc/grpc-stub/1.12.0/grpc-stub-1.12.0.jar!/io/grpc/stub/StreamObservers.class" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/gRPC/ExampleServices.java" />
     <entry file="file://$PROJECT_DIR$/target/classes/gRPC/MygRPCServer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -350,24 +432,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/gRPC/HelloServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="68" column="25" selection-start-line="68" selection-start-column="25" selection-end-line="68" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#63737#0" expanded="true" />
-            <element signature="e#12049#12085#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServiceGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="258" column="9" selection-start-line="258" selection-end-line="259" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/gRPC/HelloServices.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServiceGrpc.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServiceImp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServices.java" />
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/gRPC/HelloServiceGrpc.java" />
+    <entry file="file://$PROJECT_DIR$/api.iml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -375,65 +446,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServiceImp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#304#349#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServices.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/gRPC/HelloServiceGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="457" column="40" selection-start-line="457" selection-start-column="28" selection-end-line="457" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloServicesImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#306#351#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/MygRPCServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloWorldServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        <state relative-caret-position="406">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/HelloServices.proto">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gRPC/HelloWorldClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/helloworld.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="15" column="18" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>

@@ -1,69 +1,67 @@
 package co.overlead.main;
 
-import java.util.concurrent.ExecutionException;
-import org.apache.kafka.clients.consumer.Consumer;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.producer.Producer;
-import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
-import co.overlead.kafka.IKafkaConstants;
-import co.overlead.kafka.ConsumerCreator;
-import co.overlead.kafka.ProducerCreator;
+import java.util.UUID;
+
+import co.overlead.module.Bank;
+import co.overlead.module.Client;
+import co.overlead.module.User;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 public class App {
     public static void main(String[] args) {
-        runProducer();
+        runRedis();
+       // runProducer();
         //runConsumer();
     }
-    static void runConsumer() {
-        Consumer<Long, String> consumer = ConsumerCreator.createConsumer();
-        int noMessageFound = 0;
-        while (true) {
-            ConsumerRecords<Long, String> consumerRecords = consumer.poll(1000);
-            // 1000 is the time in milliseconds consumer will wait if no record is found at broker.
-            if (consumerRecords.count() == 0) {
-                noMessageFound++;
-                if (noMessageFound > IKafkaConstants.MAX_NO_MESSAGE_FOUND_COUNT)
-                    // If no message found count is reached to threshold exit loop.
-                    break;
-                else
-                    continue;
-            }
-            //print each record.
-            consumerRecords.forEach(record -> {
-                System.out.println("Record Key " + record.key());
-                System.out.println("Record value " + record.value());
-                System.out.println("Record partition " + record.partition());
-                System.out.println("Record offset " + record.offset());
-            });
+    static void runRedis(){
+        EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("org.hibernate.tutorial.jpa");
+        Client client=new Client();
+        client.setId(2);
+        client.setName("bob");
 
-            // commits the offset of record to broker.
-            consumer.commitAsync();
+        Bank bank =new Bank();
+        bank.setName("MSB");
+
+     //   User user=new User(transactions);
+      //  user.setName(UUID.randomUUID().toString());
+
+
+        EntityManager entityManager=entityManagerFactory.createEntityManager();
+
+
+
+
+
+        try {
+
+            entityManager.getTransaction().begin();
+            entityManager.persist(client);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        consumer.close();
-    }
-    static void runProducer() {
-        Producer<Long, String> producer = ProducerCreator.createProducer();
+        try {
 
-
-        for (int index = 0; index < IKafkaConstants.MESSAGE_COUNT; index++) {
-            //create msr
-            ProducerRecord<Long, String> record = new ProducerRecord<Long, String>(IKafkaConstants.TOPIC_NAME,
-                    "This is record " + index);
-
-            try {
-                RecordMetadata metadata = producer.send(record).get();
-                System.out.println("Record sent with key " + index + " to partition " + metadata.partition()
-                        + " with offset " + metadata.offset());
-            }
-            catch (ExecutionException e) {
-                System.out.println("Error in sending record");
-                System.out.println(e);
-            }
-            catch (InterruptedException e) {
-                System.out.println("Error in sending record");
-                System.out.println(e);
-            }
+            entityManager.getTransaction().begin();
+            entityManager.persist(bank);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+        try {
+
+            entityManager.getTransaction().begin();
+   //         entityManager.persist(user);
+            entityManager.getTransaction().commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        entityManagerFactory.close();
     }
+
+
 }
