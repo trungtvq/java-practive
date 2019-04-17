@@ -17,7 +17,7 @@ public class CounterServer {
 
         private void start() throws IOException {
             /* The port on which the server should run */
-            int port = 50052;
+            int port = 9090;
             server = ServerBuilder.forPort(port)
                     .addService(new CounterImpl())
                     .build()
@@ -84,13 +84,13 @@ public class CounterServer {
 //    rpc SetBalance(SetBalanceReq) returns (GetBalanceReply){}
             @Override
             public void getBalance(UserReq req, StreamObserver<GetBalanceReply> responseObserver){
+
                 Long value=0L;
                 if (IRedis.SYNC_COMMAND.get(req.getUsername())==null){
                     System.out.println("NOT existed user" +req.getUsername());
 
                 } else{
                     value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUsername()).toString());
-                    System.out.println("Balance user " +req.getUsername()+ " is "+value);
                     GetBalanceReply reply=GetBalanceReply.newBuilder().setBalance(value).build();
 
                     responseObserver.onNext(reply);
@@ -108,15 +108,9 @@ public class CounterServer {
 
                 } else{
                     value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUsername()).toString());
-                    System.out.println("--------");
-                    System.out.println(value);
-                    System.out.println(req.getBalanceChange());
-                    System.out.println(value+req.getBalanceChange());
                     Long newVal=req.getBalanceChange()+value;
-
                     GetBalanceReply reply=GetBalanceReply.newBuilder().setBalance(newVal).build();
                     IRedis.SYNC_COMMAND.set(req.getUsername(),newVal.toString());
-                    System.out.println("Balance user " +req.getUsername()+ " is "+newVal);
                     responseObserver.onNext(reply);
                     responseObserver.onCompleted();
                 }

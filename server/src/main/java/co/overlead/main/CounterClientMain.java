@@ -81,15 +81,15 @@ public class CounterClientMain {
      * greeting.
      */
     public static void main(String[] args) throws Exception {
-        CounterClientMain client = new CounterClientMain("localhost", 50052);
+        CounterClientMain client = new CounterClientMain("localhost", 9090);
         try {
             /* Access a service running on the local machine on port 50051 */
-            String user = "qqtest";
+            String user = "qqtest123";
             if (args.length > 0) {
                 user = args[0]; /* Use the arg as the name to greet if provided */
             }
 
-          //  client.createUser(user);
+            client.createUser(user);
             //client.getBalance(user);
            client.setBalance(user,-2000L);
             //client.getBalance(user);
