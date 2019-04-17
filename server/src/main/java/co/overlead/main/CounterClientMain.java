@@ -84,14 +84,14 @@ public class CounterClientMain {
         CounterClientMain client = new CounterClientMain("localhost", 9090);
         try {
             /* Access a service running on the local machine on port 50051 */
-            String user = "qqtest123";
+            String user = "firstuser";
             if (args.length > 0) {
                 user = args[0]; /* Use the arg as the name to greet if provided */
             }
 
             client.createUser(user);
             //client.getBalance(user);
-           client.setBalance(user,-2000L);
+           //client.setBalance(user,-2000L);
             //client.getBalance(user);
 
         } finally {

@@ -2,20 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc1363b-8614-47bb-bac9-cedf4f896390" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/proto/auth.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/overlead/database/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientServiceMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterSeviceServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/counterservice.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/server.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/overlead/database/IRedis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/overlead/database/IRedis.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterClientMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterServer$CounterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterServer$CounterImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/overlead/main/CounterServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/auth.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/backend.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/billing.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/config_change.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/consumer.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/control.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/distribution.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/documentation.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/endpoint.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/experimental/authorization_config.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/experimental/experimental.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/http.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/httpbody.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/label.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/logging.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/metric.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/monitored_resource.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/monitoring.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/quota.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/source_info.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/system_parameter.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/api/usage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/cloud/audit/audit_log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/logging/type/http_request.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/logging/type/log_severity.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/longrunning/operations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/rpc/code.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/rpc/error_details.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/rpc/status.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/color.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/date.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/dayofweek.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/latlng.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/money.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/postal_address.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/eeb1e0e51290ee7664f14b54a358bc8f/google/type/timeofday.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/any.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/api.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/compiler/plugin.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/descriptor.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/duration.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/empty.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/field_mask.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/source_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/struct.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/timestamp.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/type.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protoc-dependencies/f995f2a17817ebc6b587086f0deae6f8/google/protobuf/wrappers.proto" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/server.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/server.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/CounterCreateMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/RedisExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/RedisExample$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/RedisExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/RedisExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/database/IRedis.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/database/IRedis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/CounterClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/server/WEB-INF/classes/co/overlead/main/CounterClientMain.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,11 +85,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/RedisExample.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+            <state relative-caret-position="94">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,22 +100,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="691">
+            <state relative-caret-position="599">
               <caret line="63" column="90" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="90" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#852#1244#0" expanded="true" />
-                <element signature="e#1243#1244#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientServiceMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+            <state relative-caret-position="320">
+              <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,50 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/auth.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/helloworld.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldClient.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/ICreate.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/counter.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="38" selection-end-column="1" />
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -122,27 +133,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+            <state relative-caret-position="-690">
+              <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#748#1169#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/ProducerMain.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterSeviceServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="215">
+              <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.6.RELEASE/lettuce-core-5.1.6.RELEASE.jar!/io/lettuce/core/RedisClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-615">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/proto/counterservice.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -163,8 +214,10 @@
       <find>root</find>
       <find>lettuce</find>
       <find>SayHello</find>
-      <find>createUser</find>
       <find>SYNC_COMMAND</find>
+      <find>createUser</find>
+      <find>CounterClient</find>
+      <find>increaseBalance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,9 +246,7 @@
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/module/PayTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/module/User.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java" />
         <option value="$PROJECT_DIR$/src/main/proto/helloworld.proto" />
-        <option value="$PROJECT_DIR$/src/main/proto/counterservice.proto" />
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/service/CreateUser.java" />
@@ -205,9 +256,16 @@
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/RedisExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java" />
         <option value="$PROJECT_DIR$/src/main/proto/counter.proto" />
-        <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java" />
         <option value="$PROJECT_DIR$/src/main/proto/user.proto" />
         <option value="$PROJECT_DIR$/src/main/proto/auth.proto" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/Redis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/IDatabase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/proto/counterservice.proto" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterSeviceServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientServiceMain.java" />
       </list>
     </option>
   </component>
@@ -231,8 +289,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -339,17 +395,63 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-java" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+              <item name="grpc-java" type="462c0819:PsiDirectoryNode" />
+              <item name="gRPC" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/co/overlead/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.protractor.protractor_package" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -375,9 +477,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CounterClientMain">
+  <component name="RunManager" selected="Application.CounterClientServiceMain">
     <configuration name="CounterClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.overlead.main.CounterClientMain" />
+      <module name="server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.overlead.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CounterClientServiceMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.overlead.main.CounterClientServiceMain" />
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -402,21 +517,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorldClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.overlead.main.HelloWorldClient" />
-      <module name="server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="co.overlead.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorldServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.overlead.main.HelloWorldServer" />
+    <configuration name="CounterSeviceServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.overlead.main.CounterSeviceServer" />
       <module name="server" />
       <extension name="coverage">
         <pattern>
@@ -568,20 +670,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HelloWorldServer" />
-      <item itemvalue="Application.HelloWorldClient" />
-      <item itemvalue="Maven.server" />
       <item itemvalue="Application.CounterServer" />
       <item itemvalue="Application.CounterClientMain" />
       <item itemvalue="Application.RedisExample" />
+      <item itemvalue="Maven.server" />
+      <item itemvalue="Application.CounterSeviceServer" />
+      <item itemvalue="Application.CounterClientServiceMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CounterClientServiceMain" />
+        <item itemvalue="Application.CounterSeviceServer" />
         <item itemvalue="Application.CounterClientMain" />
         <item itemvalue="Application.CounterServer" />
         <item itemvalue="Application.RedisExample" />
-        <item itemvalue="Application.HelloWorldClient" />
-        <item itemvalue="Application.HelloWorldServer" />
       </list>
     </recent_temporary>
   </component>
@@ -598,17 +700,17 @@
       <workItem from="1555042023639" duration="6002000" />
       <workItem from="1555128907004" duration="35061000" />
       <workItem from="1555223276267" duration="31778000" />
+      <workItem from="1555465895593" duration="5643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72841000" />
+    <option name="totallyTimeSpent" value="78484000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973767" visible="true" weight="0.25506938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4973767" visible="true" weight="0.25773746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -620,15 +722,15 @@
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843652" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3282365" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32948583" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32843652" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3282365" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3282365" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -647,13 +749,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/io/grpc/examples/helloworld/GreeterGrpc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/io/grpc/examples/helloworld/GreeterGrpc.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -730,13 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/kafka/IKafkaConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -751,13 +840,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/counterservice.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -781,34 +863,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/service/CreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/ICreateUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/ICreate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterCreateMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/service/CreateUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/ICreateUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterCreateMain.java" />
     <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/examples/gRPC/CounterServiceGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -829,16 +886,6 @@
             <element signature="e#333#334#0" expanded="true" />
             <element signature="e#373#374#0" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,59 +944,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/RedisExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="270">
           <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="691">
-          <caret line="63" column="90" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#852#1244#0" expanded="true" />
-            <element signature="e#1243#1244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/ProducerMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -963,6 +959,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/proto/counter.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -970,14 +983,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/ProducerMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="64" column="65" lean-forward="true" selection-start-line="64" selection-start-column="65" selection-end-line="64" selection-end-column="65" />
+        <state relative-caret-position="165">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#748#1169#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -986,6 +999,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-424">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/lettuce/lettuce-core/5.1.6.RELEASE/lettuce-core-5.1.6.RELEASE.jar!/io/lettuce/core/RedisClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-615">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/ICreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/counterservice.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/HelloWorldServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="63" column="90" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/database/IRedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690">
+          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterSeviceServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientServiceMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="106" column="10" selection-start-line="106" selection-start-column="10" selection-end-line="106" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/co/overlead/main/CounterClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
