@@ -1,15 +1,9 @@
 package co.overlead.main;
 
 import co.overlead.database.IRedis;
-import co.overlead.module.User;
-import io.lettuce.core.RedisClient;
-import io.lettuce.core.api.StatefulRedisConnection;
-import io.lettuce.core.api.sync.RedisStringCommands;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-
-import javax.persistence.Id;
 
 public class RedisExample {
     public static void main(String[]args ) throws ParseException {
@@ -22,8 +16,8 @@ public class RedisExample {
 
         System.out.println(user);
 
-        IRedis.SYNC_COMMAND.set("user123","0");
-        String value = (String) IRedis.SYNC_COMMAND.get("user");
+        IRedis.USER_SYNC_COMMAND.set("user123","0");
+        String value = (String) IRedis.USER_SYNC_COMMAND.get("user");
 
         JSONParser parser = new JSONParser();
         JSONObject json = (JSONObject) parser.parse(value);

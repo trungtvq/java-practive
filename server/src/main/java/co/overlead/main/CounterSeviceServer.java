@@ -6,17 +6,27 @@ import com.example.grpc.Counterservice;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.stub.StreamObserver;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
 public class CounterSeviceServer {
-    private static final Logger logger = Logger.getLogger(CounterServer.class.getName());
+    private static final Logger logger = LogManager.getLogger(CounterSeviceServer.class.getName());
 
     private Server server;
 
     private void start() throws IOException {
         /* The port on which the server should run */
+
+        logger.trace("tracing... ...");
+        logger.debug("debuging ... ...");
+
+        logger.info("info ... ... ");
+        logger.warn("warning .... ... ");
+        logger.error("error ... ... ");
+        logger.fatal("fatal ... ...");
+
         int port = 9090;
         server = ServerBuilder.forPort(port)
                 .addService(new CounterServiceImpl())
@@ -28,9 +38,11 @@ public class CounterSeviceServer {
             @Override
             public void run() {
                 // Use stderr here since the logger may have been reset by its JVM shutdown hook.
+                // IRedis.USER_SYNC_COMMAND.
                 System.err.println("*** shutting down gRPC server since JVM is shutting down");
                 CounterSeviceServer.this.stop();
                 System.err.println("*** server shut down");
+
             }
         });
     }
@@ -80,13 +92,15 @@ public class CounterSeviceServer {
 
         @Override
         public void getBalance(Counterservice.UserReq req, StreamObserver<Counterservice.BalanceRes> responseObserver){
-            System.out.println("get:"+IRedis.SYNC_COMMAND.get(req.getUserId()));
-            Long value=0L;
-            if (IRedis.SYNC_COMMAND.get(req.getUserId())==null){
-                System.out.println("NOT existed user" +req.getUserId());
 
+            Long value=0L;
+            if (IRedis.USER_SYNC_COMMAND.get(req.getUserId())==null){
+                Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(0).build();
+
+                responseObserver.onNext(reply);
+                responseObserver.onCompleted();
             } else{
-                value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUserId()).toString());
+                value=Long.parseLong(IRedis.USER_SYNC_COMMAND.get(req.getUserId()).toString());
                 Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(value).build();
 
                 responseObserver.onNext(reply);
@@ -98,24 +112,20 @@ public class CounterSeviceServer {
 
         @Override
         public void increaseBalance(Counterservice.UserReq req, StreamObserver<Counterservice.BalanceRes> responseObserver){
-            Long value=0L;
-            System.out.println("increase:"+IRedis.SYNC_COMMAND.get(req.getUserId()));
 
-            if (IRedis.SYNC_COMMAND.get(req.getUserId())==null){
-                System.out.println("NOT existed user" +req.getUserId());
-                System.out.println("Creating" +req.getUserId());
-                IRedis.SYNC_COMMAND.set(req.getUserId(),req.getBalance());
+            if (IRedis.USER_SYNC_COMMAND.get(req.getUserId())==null){
+                Long value=req.getBalance();
+                IRedis.USER_SYNC_COMMAND.set(req.getUserId(),value.toString());
                 Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(req.getBalance()).build();
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
             } else{
 
-                System.out.println(value);
-                value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUserId()).toString());
-                Long newVal=value+ req.getBalance();
+                Long value= (Long) req.getBalance();
 
-                Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(newVal).build();
-                IRedis.SYNC_COMMAND.set(req.getUserId(),newVal.toString());
+                // IRedis.USER_SYNC_COMMAND.set(req.getUserId(),newVal.toString());
+                IRedis.USER_SYNC_COMMAND.incrby(req.getUserId(),value);
+                Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(value).build();
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
             }
@@ -123,25 +133,21 @@ public class CounterSeviceServer {
 
         @Override
         public void decreaseBalance(Counterservice.UserReq req, StreamObserver<Counterservice.BalanceRes> responseObserver){
-            Long value=0L;
-            System.out.println("decrease:"+IRedis.SYNC_COMMAND.get(req.getUserId()));
-            if (IRedis.SYNC_COMMAND.get(req.getUserId())==null){
-                System.out.println("NOT existed user" +req.getUserId());
-                System.out.println("Creating" +req.getUserId());
-                IRedis.SYNC_COMMAND.set(req.getUserId(),-req.getBalance());
+
+            if (IRedis.USER_SYNC_COMMAND.get(req.getUserId())==null){
+                Long value=-req.getBalance();
+                IRedis.USER_SYNC_COMMAND.set(req.getUserId(),value.toString());
 
                 Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(req.getBalance()).build();
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
             } else{
 
-                value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUserId()).toString());
 
-                System.out.println(value);
-                Long newVal=value-req.getBalance();
+                Long value=req.getBalance();
 
-                Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(newVal).build();
-                IRedis.SYNC_COMMAND.set(req.getUserId(),newVal.toString());
+                Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(value).build();
+                IRedis.USER_SYNC_COMMAND.decrby(req.getUserId(),value);
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
             }
@@ -150,18 +156,20 @@ public class CounterSeviceServer {
         @Override
         public void setBalance(Counterservice.UserReq req, StreamObserver<Counterservice.BalanceRes> responseObserver){
             Long value=0L;
-            System.out.println("set:"+IRedis.SYNC_COMMAND.get(req.getUserId()));
-            if (IRedis.SYNC_COMMAND.get(req.getUserId())==null){
-                System.out.println("NOT existed user" +req.getUserId());
-                System.out.println("Creating" +req.getUserId());
-                IRedis.SYNC_COMMAND.set(req.getUserId(),req.getBalance());
+            if (IRedis.USER_SYNC_COMMAND.get(req.getUserId())==null){
+
+                Long val=req.getBalance();
+                IRedis.USER_SYNC_COMMAND.set(req.getUserId(),val.toString());
+
                 Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(req.getBalance()).build();
+
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
+
             } else{
                 Long newVal=req.getBalance();
                 Counterservice.BalanceRes reply= Counterservice.BalanceRes.newBuilder().setBalance(newVal).build();
-                IRedis.SYNC_COMMAND.set(req.getUserId(),newVal.toString());
+                IRedis.USER_SYNC_COMMAND.set(req.getUserId(),newVal.toString());
                 responseObserver.onNext(reply);
                 responseObserver.onCompleted();
             }

@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class CounterClientServiceMain {
-    private static final Logger logger = Logger.getLogger(CounterClientMain.class.getName());
+    private static final Logger logger = Logger.getLogger(CounterClientServiceMain.class.getName());
 
     private final ManagedChannel channel;
     private final CounterServiceGrpc.CounterServiceBlockingStub blockingStub;
@@ -103,9 +103,9 @@ public class CounterClientServiceMain {
             }
 
             //client.getBalance(user);
-          // client.setBalance(user,100L);
-           client.increaseBalance(user,500L);
-          // client.decreaseBalance(user,200L);
+            // client.setBalance(user,100L);
+            client.increaseBalance(user,500L);
+            // client.decreaseBalance(user,200L);
             //client.getBalance(user);
             //client.setBalance(user,-2000L);
             //client.getBalance(user);

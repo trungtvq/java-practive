@@ -1,7 +1,5 @@
 package co.overlead.main;
-import clojure.lang.ExceptionInfo;
 import co.overlead.database.IRedis;
-import com.sun.jersey.server.impl.model.parameter.multivalued.StringReaderProviders;
 import examples.gRPC.*;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -67,8 +65,8 @@ public class CounterServer {
                 Result reply =null;
 
 
-                if (IRedis.SYNC_COMMAND.get(req.getUsername())==null){
-                    IRedis.SYNC_COMMAND.set(req.getUsername(),"0");
+                if (IRedis.USER_SYNC_COMMAND.get(req.getUsername())==null){
+                    IRedis.USER_SYNC_COMMAND.set(req.getUsername(),"0");
                     reply= Result.newBuilder().setResult("Success").build();
                     System.out.println("Success created user" +req.getUsername());
                 } else{
@@ -86,11 +84,11 @@ public class CounterServer {
             public void getBalance(UserReq req, StreamObserver<GetBalanceReply> responseObserver){
 
                 Long value=0L;
-                if (IRedis.SYNC_COMMAND.get(req.getUsername())==null){
+                if (IRedis.USER_SYNC_COMMAND.get(req.getUsername())==null){
                     System.out.println("NOT existed user" +req.getUsername());
 
                 } else{
-                    value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUsername()).toString());
+                    value=Long.parseLong(IRedis.USER_SYNC_COMMAND.get(req.getUsername()).toString());
                     GetBalanceReply reply=GetBalanceReply.newBuilder().setBalance(value).build();
 
                     responseObserver.onNext(reply);
@@ -103,14 +101,14 @@ public class CounterServer {
             @Override
             public void setBalance(SetBalanceReq req, StreamObserver<GetBalanceReply> responseObserver){
                 Long value=0L;
-                if (IRedis.SYNC_COMMAND.get(req.getUsername())==null){
+                if (IRedis.USER_SYNC_COMMAND.get(req.getUsername())==null){
                     System.out.println("NOT existed user" +req.getUsername());
 
                 } else{
-                    value=Long.parseLong(IRedis.SYNC_COMMAND.get(req.getUsername()).toString());
+                    value=Long.parseLong(IRedis.USER_SYNC_COMMAND.get(req.getUsername()).toString());
                     Long newVal=req.getBalanceChange()+value;
                     GetBalanceReply reply=GetBalanceReply.newBuilder().setBalance(newVal).build();
-                    IRedis.SYNC_COMMAND.set(req.getUsername(),newVal.toString());
+                    IRedis.USER_SYNC_COMMAND.set(req.getUsername(),newVal.toString());
                     responseObserver.onNext(reply);
                     responseObserver.onCompleted();
                 }
