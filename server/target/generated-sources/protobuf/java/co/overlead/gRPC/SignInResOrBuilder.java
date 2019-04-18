@@ -26,4 +26,14 @@ public interface SignInResOrBuilder extends
    */
   com.google.protobuf.ByteString
       getResponseBytes();
+
+  /**
+   * <code>string type = 3;</code>
+   */
+  java.lang.String getType();
+  /**
+   * <code>string type = 3;</code>
+   */
+  com.google.protobuf.ByteString
+      getTypeBytes();
 }

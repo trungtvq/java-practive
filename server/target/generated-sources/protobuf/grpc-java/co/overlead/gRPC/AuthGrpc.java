@@ -60,21 +60,21 @@ public final class AuthGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<co.overlead.gRPC.SignUpReq,
-      co.overlead.gRPC.SignUpRes> getSignUpMethod;
+      co.overlead.gRPC.SignInRes> getSignUpMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SignUp",
       requestType = co.overlead.gRPC.SignUpReq.class,
-      responseType = co.overlead.gRPC.SignUpRes.class,
+      responseType = co.overlead.gRPC.SignInRes.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<co.overlead.gRPC.SignUpReq,
-      co.overlead.gRPC.SignUpRes> getSignUpMethod() {
-    io.grpc.MethodDescriptor<co.overlead.gRPC.SignUpReq, co.overlead.gRPC.SignUpRes> getSignUpMethod;
+      co.overlead.gRPC.SignInRes> getSignUpMethod() {
+    io.grpc.MethodDescriptor<co.overlead.gRPC.SignUpReq, co.overlead.gRPC.SignInRes> getSignUpMethod;
     if ((getSignUpMethod = AuthGrpc.getSignUpMethod) == null) {
       synchronized (AuthGrpc.class) {
         if ((getSignUpMethod = AuthGrpc.getSignUpMethod) == null) {
           AuthGrpc.getSignUpMethod = getSignUpMethod = 
-              io.grpc.MethodDescriptor.<co.overlead.gRPC.SignUpReq, co.overlead.gRPC.SignUpRes>newBuilder()
+              io.grpc.MethodDescriptor.<co.overlead.gRPC.SignUpReq, co.overlead.gRPC.SignInRes>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "counter.Auth", "SignUp"))
@@ -82,13 +82,45 @@ public final class AuthGrpc {
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   co.overlead.gRPC.SignUpReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  co.overlead.gRPC.SignUpRes.getDefaultInstance()))
+                  co.overlead.gRPC.SignInRes.getDefaultInstance()))
                   .setSchemaDescriptor(new AuthMethodDescriptorSupplier("SignUp"))
                   .build();
           }
         }
      }
      return getSignUpMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<co.overlead.gRPC.ResetReq,
+      co.overlead.gRPC.ResetRes> getResetPasswordMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "ResetPassword",
+      requestType = co.overlead.gRPC.ResetReq.class,
+      responseType = co.overlead.gRPC.ResetRes.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
+  public static io.grpc.MethodDescriptor<co.overlead.gRPC.ResetReq,
+      co.overlead.gRPC.ResetRes> getResetPasswordMethod() {
+    io.grpc.MethodDescriptor<co.overlead.gRPC.ResetReq, co.overlead.gRPC.ResetRes> getResetPasswordMethod;
+    if ((getResetPasswordMethod = AuthGrpc.getResetPasswordMethod) == null) {
+      synchronized (AuthGrpc.class) {
+        if ((getResetPasswordMethod = AuthGrpc.getResetPasswordMethod) == null) {
+          AuthGrpc.getResetPasswordMethod = getResetPasswordMethod = 
+              io.grpc.MethodDescriptor.<co.overlead.gRPC.ResetReq, co.overlead.gRPC.ResetRes>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "counter.Auth", "ResetPassword"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  co.overlead.gRPC.ResetReq.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  co.overlead.gRPC.ResetRes.getDefaultInstance()))
+                  .setSchemaDescriptor(new AuthMethodDescriptorSupplier("ResetPassword"))
+                  .build();
+          }
+        }
+     }
+     return getResetPasswordMethod;
   }
 
   /**
@@ -128,8 +160,15 @@ public final class AuthGrpc {
     /**
      */
     public void signUp(co.overlead.gRPC.SignUpReq request,
-        io.grpc.stub.StreamObserver<co.overlead.gRPC.SignUpRes> responseObserver) {
+        io.grpc.stub.StreamObserver<co.overlead.gRPC.SignInRes> responseObserver) {
       asyncUnimplementedUnaryCall(getSignUpMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void resetPassword(co.overlead.gRPC.ResetReq request,
+        io.grpc.stub.StreamObserver<co.overlead.gRPC.ResetRes> responseObserver) {
+      asyncUnimplementedUnaryCall(getResetPasswordMethod(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
@@ -146,8 +185,15 @@ public final class AuthGrpc {
             asyncUnaryCall(
               new MethodHandlers<
                 co.overlead.gRPC.SignUpReq,
-                co.overlead.gRPC.SignUpRes>(
+                co.overlead.gRPC.SignInRes>(
                   this, METHODID_SIGN_UP)))
+          .addMethod(
+            getResetPasswordMethod(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                co.overlead.gRPC.ResetReq,
+                co.overlead.gRPC.ResetRes>(
+                  this, METHODID_RESET_PASSWORD)))
           .build();
     }
   }
@@ -181,9 +227,17 @@ public final class AuthGrpc {
     /**
      */
     public void signUp(co.overlead.gRPC.SignUpReq request,
-        io.grpc.stub.StreamObserver<co.overlead.gRPC.SignUpRes> responseObserver) {
+        io.grpc.stub.StreamObserver<co.overlead.gRPC.SignInRes> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSignUpMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void resetPassword(co.overlead.gRPC.ResetReq request,
+        io.grpc.stub.StreamObserver<co.overlead.gRPC.ResetRes> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getResetPasswordMethod(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -214,9 +268,16 @@ public final class AuthGrpc {
 
     /**
      */
-    public co.overlead.gRPC.SignUpRes signUp(co.overlead.gRPC.SignUpReq request) {
+    public co.overlead.gRPC.SignInRes signUp(co.overlead.gRPC.SignUpReq request) {
       return blockingUnaryCall(
           getChannel(), getSignUpMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public co.overlead.gRPC.ResetRes resetPassword(co.overlead.gRPC.ResetReq request) {
+      return blockingUnaryCall(
+          getChannel(), getResetPasswordMethod(), getCallOptions(), request);
     }
   }
 
@@ -248,15 +309,24 @@ public final class AuthGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<co.overlead.gRPC.SignUpRes> signUp(
+    public com.google.common.util.concurrent.ListenableFuture<co.overlead.gRPC.SignInRes> signUp(
         co.overlead.gRPC.SignUpReq request) {
       return futureUnaryCall(
           getChannel().newCall(getSignUpMethod(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<co.overlead.gRPC.ResetRes> resetPassword(
+        co.overlead.gRPC.ResetReq request) {
+      return futureUnaryCall(
+          getChannel().newCall(getResetPasswordMethod(), getCallOptions()), request);
     }
   }
 
   private static final int METHODID_SIGN_IN = 0;
   private static final int METHODID_SIGN_UP = 1;
+  private static final int METHODID_RESET_PASSWORD = 2;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -281,7 +351,11 @@ public final class AuthGrpc {
           break;
         case METHODID_SIGN_UP:
           serviceImpl.signUp((co.overlead.gRPC.SignUpReq) request,
-              (io.grpc.stub.StreamObserver<co.overlead.gRPC.SignUpRes>) responseObserver);
+              (io.grpc.stub.StreamObserver<co.overlead.gRPC.SignInRes>) responseObserver);
+          break;
+        case METHODID_RESET_PASSWORD:
+          serviceImpl.resetPassword((co.overlead.gRPC.ResetReq) request,
+              (io.grpc.stub.StreamObserver<co.overlead.gRPC.ResetRes>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -346,6 +420,7 @@ public final class AuthGrpc {
               .setSchemaDescriptor(new AuthFileDescriptorSupplier())
               .addMethod(getSignInMethod())
               .addMethod(getSignUpMethod())
+              .addMethod(getResetPasswordMethod())
               .build();
         }
       }

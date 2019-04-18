@@ -8,12 +8,32 @@ public interface SignUpReqOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string result = 1;</code>
+   * <code>string username = 1;</code>
    */
-  java.lang.String getResult();
+  java.lang.String getUsername();
   /**
-   * <code>string result = 1;</code>
+   * <code>string username = 1;</code>
    */
   com.google.protobuf.ByteString
-      getResultBytes();
+      getUsernameBytes();
+
+  /**
+   * <code>string password = 2;</code>
+   */
+  java.lang.String getPassword();
+  /**
+   * <code>string password = 2;</code>
+   */
+  com.google.protobuf.ByteString
+      getPasswordBytes();
+
+  /**
+   * <code>string name = 3;</code>
+   */
+  java.lang.String getName();
+  /**
+   * <code>string name = 3;</code>
+   */
+  com.google.protobuf.ByteString
+      getNameBytes();
 }

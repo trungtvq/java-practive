@@ -30,10 +30,15 @@ public final class auth {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_counter_SignUpReq_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_SignUpRes_descriptor;
+    internal_static_counter_ResetReq_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_SignUpRes_fieldAccessorTable;
+      internal_static_counter_ResetReq_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_counter_ResetRes_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_counter_ResetRes_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -44,14 +49,18 @@ public final class auth {
   static {
     java.lang.String[] descriptorData = {
       "\n\nauth.proto\022\007counter\"/\n\tSignInReq\022\020\n\010us" +
-      "ername\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\"-\n\tSignIn" +
-      "Res\022\016\n\006status\030\001 \001(\t\022\020\n\010response\030\002 \001(\t\"\033\n" +
-      "\tSignUpReq\022\016\n\006result\030\001 \001(\t\"\034\n\tSignUpRes\022" +
-      "\017\n\007balance\030\001 \001(\0032n\n\004Auth\0222\n\006SignIn\022\022.cou" +
-      "nter.SignInReq\032\022.counter.SignInRes\"\000\0222\n\006" +
-      "SignUp\022\022.counter.SignUpReq\032\022.counter.Sig" +
-      "nUpRes\"\000B!\n\020co.overlead.gRPCB\004authP\001\242\002\004a" +
-      "uthb\006proto3"
+      "ername\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\";\n\tSignIn" +
+      "Res\022\016\n\006status\030\001 \001(\t\022\020\n\010response\030\002 \001(\t\022\014\n" +
+      "\004type\030\003 \001(\t\"=\n\tSignUpReq\022\020\n\010username\030\001 \001" +
+      "(\t\022\020\n\010password\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\")\n\010Re" +
+      "setReq\022\014\n\004type\030\001 \001(\t\022\017\n\007content\030\002 \001(\t\")\n" +
+      "\010ResetRes\022\016\n\006status\030\001 \001(\t\022\r\n\005token\030\002 \001(\t" +
+      "2\247\001\n\004Auth\0222\n\006SignIn\022\022.counter.SignInReq\032" +
+      "\022.counter.SignInRes\"\000\0222\n\006SignUp\022\022.counte" +
+      "r.SignUpReq\032\022.counter.SignInRes\"\000\0227\n\rRes" +
+      "etPassword\022\021.counter.ResetReq\032\021.counter." +
+      "ResetRes\"\000B!\n\020co.overlead.gRPCB\004authP\001\242\002" +
+      "\004authb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -76,19 +85,25 @@ public final class auth {
     internal_static_counter_SignInRes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_counter_SignInRes_descriptor,
-        new java.lang.String[] { "Status", "Response", });
+        new java.lang.String[] { "Status", "Response", "Type", });
     internal_static_counter_SignUpReq_descriptor =
       getDescriptor().getMessageTypes().get(2);
     internal_static_counter_SignUpReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_counter_SignUpReq_descriptor,
-        new java.lang.String[] { "Result", });
-    internal_static_counter_SignUpRes_descriptor =
+        new java.lang.String[] { "Username", "Password", "Name", });
+    internal_static_counter_ResetReq_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_counter_SignUpRes_fieldAccessorTable = new
+    internal_static_counter_ResetReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_SignUpRes_descriptor,
-        new java.lang.String[] { "Balance", });
+        internal_static_counter_ResetReq_descriptor,
+        new java.lang.String[] { "Type", "Content", });
+    internal_static_counter_ResetRes_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_counter_ResetRes_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_counter_ResetRes_descriptor,
+        new java.lang.String[] { "Status", "Token", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
