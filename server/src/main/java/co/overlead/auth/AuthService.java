@@ -13,7 +13,6 @@ import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
 public class AuthService  {
-    private static final Logger logger = LogManager.getLogger(AuthService.class.getName());
 
     private Server server;
 
@@ -24,7 +23,6 @@ public class AuthService  {
                 .addService(new AuthImpl())
                 .build()
                 .start();
-        logger.info("Server started, listening on " + port);
 
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
