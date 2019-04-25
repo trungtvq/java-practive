@@ -105,10 +105,10 @@ public class CounterClientServiceMain {
             //client.getBalance(user);
             // client.setBalance(user,100L);
             client.increaseBalance(user,500L);
-            // client.decreaseBalance(user,200L);
-            //client.getBalance(user);
-            //client.setBalance(user,-2000L);
-            //client.getBalance(user);
+             client.decreaseBalance(user,200L);
+            client.getBalance(user);
+            client.setBalance(user,-2000L);
+            client.getBalance(user);
 
         } finally {
             client.shutdown();
