@@ -4,11 +4,11 @@
 package co.overlead.gRPC;
 
 /**
- * Protobuf type {@code counter.ResetReq}
+ * Protobuf type {@code Auth.ResetReq}
  */
 public  final class ResetReq extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:counter.ResetReq)
+    // @@protoc_insertion_point(message_implements:Auth.ResetReq)
     ResetReqOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use ResetReq.newBuilder() to construct.
@@ -77,13 +77,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return co.overlead.gRPC.auth.internal_static_counter_ResetReq_descriptor;
+    return co.overlead.gRPC.auth.internal_static_Auth_ResetReq_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return co.overlead.gRPC.auth.internal_static_counter_ResetReq_fieldAccessorTable
+    return co.overlead.gRPC.auth.internal_static_Auth_ResetReq_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             co.overlead.gRPC.ResetReq.class, co.overlead.gRPC.ResetReq.Builder.class);
   }
@@ -321,21 +321,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code counter.ResetReq}
+   * Protobuf type {@code Auth.ResetReq}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:counter.ResetReq)
+      // @@protoc_insertion_point(builder_implements:Auth.ResetReq)
       co.overlead.gRPC.ResetReqOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return co.overlead.gRPC.auth.internal_static_counter_ResetReq_descriptor;
+      return co.overlead.gRPC.auth.internal_static_Auth_ResetReq_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return co.overlead.gRPC.auth.internal_static_counter_ResetReq_fieldAccessorTable
+      return co.overlead.gRPC.auth.internal_static_Auth_ResetReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               co.overlead.gRPC.ResetReq.class, co.overlead.gRPC.ResetReq.Builder.class);
     }
@@ -368,7 +368,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return co.overlead.gRPC.auth.internal_static_counter_ResetReq_descriptor;
+      return co.overlead.gRPC.auth.internal_static_Auth_ResetReq_descriptor;
     }
 
     @java.lang.Override
@@ -625,10 +625,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:counter.ResetReq)
+    // @@protoc_insertion_point(builder_scope:Auth.ResetReq)
   }
 
-  // @@protoc_insertion_point(class_scope:counter.ResetReq)
+  // @@protoc_insertion_point(class_scope:Auth.ResetReq)
   private static final co.overlead.gRPC.ResetReq DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new co.overlead.gRPC.ResetReq();

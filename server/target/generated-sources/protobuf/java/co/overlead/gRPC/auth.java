@@ -15,30 +15,30 @@ public final class auth {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_SignInReq_descriptor;
+    internal_static_Auth_SignInReq_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_SignInReq_fieldAccessorTable;
+      internal_static_Auth_SignInReq_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_SignInRes_descriptor;
+    internal_static_Auth_SignInRes_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_SignInRes_fieldAccessorTable;
+      internal_static_Auth_SignInRes_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_SignUpReq_descriptor;
+    internal_static_Auth_SignUpReq_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_SignUpReq_fieldAccessorTable;
+      internal_static_Auth_SignUpReq_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_ResetReq_descriptor;
+    internal_static_Auth_ResetReq_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_ResetReq_fieldAccessorTable;
+      internal_static_Auth_ResetReq_fieldAccessorTable;
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_counter_ResetRes_descriptor;
+    internal_static_Auth_ResetRes_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_counter_ResetRes_fieldAccessorTable;
+      internal_static_Auth_ResetRes_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -48,19 +48,18 @@ public final class auth {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\nauth.proto\022\007counter\"/\n\tSignInReq\022\020\n\010us" +
-      "ername\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\";\n\tSignIn" +
-      "Res\022\016\n\006status\030\001 \001(\t\022\020\n\010response\030\002 \001(\t\022\014\n" +
-      "\004type\030\003 \001(\t\"=\n\tSignUpReq\022\020\n\010username\030\001 \001" +
-      "(\t\022\020\n\010password\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\")\n\010Re" +
-      "setReq\022\014\n\004type\030\001 \001(\t\022\017\n\007content\030\002 \001(\t\")\n" +
-      "\010ResetRes\022\016\n\006status\030\001 \001(\t\022\r\n\005token\030\002 \001(\t" +
-      "2\247\001\n\004Auth\0222\n\006SignIn\022\022.counter.SignInReq\032" +
-      "\022.counter.SignInRes\"\000\0222\n\006SignUp\022\022.counte" +
-      "r.SignUpReq\032\022.counter.SignInRes\"\000\0227\n\rRes" +
-      "etPassword\022\021.counter.ResetReq\032\021.counter." +
-      "ResetRes\"\000B!\n\020co.overlead.gRPCB\004authP\001\242\002" +
-      "\004authb\006proto3"
+      "\n\nauth.proto\022\004Auth\"/\n\tSignInReq\022\020\n\010usern" +
+      "ame\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\";\n\tSignInRes" +
+      "\022\016\n\006status\030\001 \001(\t\022\020\n\010response\030\002 \001(\t\022\014\n\004ty" +
+      "pe\030\003 \001(\t\"=\n\tSignUpReq\022\020\n\010username\030\001 \001(\t\022" +
+      "\020\n\010password\030\002 \001(\t\022\014\n\004name\030\003 \001(\t\")\n\010Reset" +
+      "Req\022\014\n\004type\030\001 \001(\t\022\017\n\007content\030\002 \001(\t\")\n\010Re" +
+      "setRes\022\016\n\006status\030\001 \001(\t\022\r\n\005token\030\002 \001(\t2\225\001" +
+      "\n\004Auth\022,\n\006SignIn\022\017.Auth.SignInReq\032\017.Auth" +
+      ".SignInRes\"\000\022,\n\006SignUp\022\017.Auth.SignUpReq\032" +
+      "\017.Auth.SignInRes\"\000\0221\n\rResetPassword\022\016.Au" +
+      "th.ResetReq\032\016.Auth.ResetRes\"\000B!\n\020co.over" +
+      "lead.gRPCB\004authP\001\242\002\004authb\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -74,35 +73,35 @@ public final class auth {
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         }, assigner);
-    internal_static_counter_SignInReq_descriptor =
+    internal_static_Auth_SignInReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_counter_SignInReq_fieldAccessorTable = new
+    internal_static_Auth_SignInReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_SignInReq_descriptor,
+        internal_static_Auth_SignInReq_descriptor,
         new java.lang.String[] { "Username", "Password", });
-    internal_static_counter_SignInRes_descriptor =
+    internal_static_Auth_SignInRes_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_counter_SignInRes_fieldAccessorTable = new
+    internal_static_Auth_SignInRes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_SignInRes_descriptor,
+        internal_static_Auth_SignInRes_descriptor,
         new java.lang.String[] { "Status", "Response", "Type", });
-    internal_static_counter_SignUpReq_descriptor =
+    internal_static_Auth_SignUpReq_descriptor =
       getDescriptor().getMessageTypes().get(2);
-    internal_static_counter_SignUpReq_fieldAccessorTable = new
+    internal_static_Auth_SignUpReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_SignUpReq_descriptor,
+        internal_static_Auth_SignUpReq_descriptor,
         new java.lang.String[] { "Username", "Password", "Name", });
-    internal_static_counter_ResetReq_descriptor =
+    internal_static_Auth_ResetReq_descriptor =
       getDescriptor().getMessageTypes().get(3);
-    internal_static_counter_ResetReq_fieldAccessorTable = new
+    internal_static_Auth_ResetReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_ResetReq_descriptor,
+        internal_static_Auth_ResetReq_descriptor,
         new java.lang.String[] { "Type", "Content", });
-    internal_static_counter_ResetRes_descriptor =
+    internal_static_Auth_ResetRes_descriptor =
       getDescriptor().getMessageTypes().get(4);
-    internal_static_counter_ResetRes_fieldAccessorTable = new
+    internal_static_Auth_ResetRes_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_counter_ResetRes_descriptor,
+        internal_static_Auth_ResetRes_descriptor,
         new java.lang.String[] { "Status", "Token", });
   }
 

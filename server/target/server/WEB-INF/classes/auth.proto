@@ -4,7 +4,7 @@ option java_multiple_files = true;
 option java_package = "co.overlead.gRPC";
 option java_outer_classname = "auth";
 option objc_class_prefix = "auth";
-package counter;
+package Auth;
 
 service Auth{
     rpc SignIn(SignInReq) returns (SignInRes){}
@@ -36,3 +36,5 @@ message ResetRes{
     string status=1;
     string token=2;
 }
+
+

@@ -24,7 +24,7 @@ public final class AuthGrpc {
 
   private AuthGrpc() {}
 
-  public static final String SERVICE_NAME = "counter.Auth";
+  public static final String SERVICE_NAME = "Auth.Auth";
 
   // Static method descriptors that strictly reflect the proto.
   private static volatile io.grpc.MethodDescriptor<co.overlead.gRPC.SignInReq,
@@ -45,7 +45,7 @@ public final class AuthGrpc {
               io.grpc.MethodDescriptor.<co.overlead.gRPC.SignInReq, co.overlead.gRPC.SignInRes>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "counter.Auth", "SignIn"))
+                  "Auth.Auth", "SignIn"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   co.overlead.gRPC.SignInReq.getDefaultInstance()))
@@ -77,7 +77,7 @@ public final class AuthGrpc {
               io.grpc.MethodDescriptor.<co.overlead.gRPC.SignUpReq, co.overlead.gRPC.SignInRes>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "counter.Auth", "SignUp"))
+                  "Auth.Auth", "SignUp"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   co.overlead.gRPC.SignUpReq.getDefaultInstance()))
@@ -109,7 +109,7 @@ public final class AuthGrpc {
               io.grpc.MethodDescriptor.<co.overlead.gRPC.ResetReq, co.overlead.gRPC.ResetRes>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "counter.Auth", "ResetPassword"))
+                  "Auth.Auth", "ResetPassword"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   co.overlead.gRPC.ResetReq.getDefaultInstance()))

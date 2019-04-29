@@ -4,11 +4,11 @@
 package co.overlead.gRPC;
 
 /**
- * Protobuf type {@code counter.SignUpReq}
+ * Protobuf type {@code Auth.SignUpReq}
  */
 public  final class SignUpReq extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:counter.SignUpReq)
+    // @@protoc_insertion_point(message_implements:Auth.SignUpReq)
     SignUpReqOrBuilder {
 private static final long serialVersionUID = 0L;
   // Use SignUpReq.newBuilder() to construct.
@@ -84,13 +84,13 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return co.overlead.gRPC.auth.internal_static_counter_SignUpReq_descriptor;
+    return co.overlead.gRPC.auth.internal_static_Auth_SignUpReq_descriptor;
   }
 
   @java.lang.Override
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return co.overlead.gRPC.auth.internal_static_counter_SignUpReq_fieldAccessorTable
+    return co.overlead.gRPC.auth.internal_static_Auth_SignUpReq_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
             co.overlead.gRPC.SignUpReq.class, co.overlead.gRPC.SignUpReq.Builder.class);
   }
@@ -372,21 +372,21 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code counter.SignUpReq}
+   * Protobuf type {@code Auth.SignUpReq}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:counter.SignUpReq)
+      // @@protoc_insertion_point(builder_implements:Auth.SignUpReq)
       co.overlead.gRPC.SignUpReqOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return co.overlead.gRPC.auth.internal_static_counter_SignUpReq_descriptor;
+      return co.overlead.gRPC.auth.internal_static_Auth_SignUpReq_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return co.overlead.gRPC.auth.internal_static_counter_SignUpReq_fieldAccessorTable
+      return co.overlead.gRPC.auth.internal_static_Auth_SignUpReq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
               co.overlead.gRPC.SignUpReq.class, co.overlead.gRPC.SignUpReq.Builder.class);
     }
@@ -421,7 +421,7 @@ private static final long serialVersionUID = 0L;
     @java.lang.Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return co.overlead.gRPC.auth.internal_static_counter_SignUpReq_descriptor;
+      return co.overlead.gRPC.auth.internal_static_Auth_SignUpReq_descriptor;
     }
 
     @java.lang.Override
@@ -752,10 +752,10 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:counter.SignUpReq)
+    // @@protoc_insertion_point(builder_scope:Auth.SignUpReq)
   }
 
-  // @@protoc_insertion_point(class_scope:counter.SignUpReq)
+  // @@protoc_insertion_point(class_scope:Auth.SignUpReq)
   private static final co.overlead.gRPC.SignUpReq DEFAULT_INSTANCE;
   static {
     DEFAULT_INSTANCE = new co.overlead.gRPC.SignUpReq();

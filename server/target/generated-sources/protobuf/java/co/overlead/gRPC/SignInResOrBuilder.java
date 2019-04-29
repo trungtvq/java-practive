@@ -4,7 +4,7 @@
 package co.overlead.gRPC;
 
 public interface SignInResOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:counter.SignInRes)
+    // @@protoc_insertion_point(interface_extends:Auth.SignInRes)
     com.google.protobuf.MessageOrBuilder {
 
   /**

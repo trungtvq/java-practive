@@ -4,7 +4,7 @@
 package co.overlead.gRPC;
 
 public interface ResetReqOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:counter.ResetReq)
+    // @@protoc_insertion_point(interface_extends:Auth.ResetReq)
     com.google.protobuf.MessageOrBuilder {
 
   /**
